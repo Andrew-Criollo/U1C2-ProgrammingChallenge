@@ -53,7 +53,6 @@ public class Solution {
         int hundreds = (((value % 100000)/10000) + 1) % 10;
         int updatedValue = (hundreds * 10000) + (tens * 1000) + (ones * 100) + (tenths * 10) + (hundreths * 1);
         return updatedValue/100.0;
-
     }
 
     public static void main(String[] args) {
@@ -61,5 +60,4 @@ public class Solution {
         System.out.println(s.adjustDigits(120.90));
         //231.01
     }
-
 }
